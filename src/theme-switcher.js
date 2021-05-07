@@ -12,7 +12,6 @@ switch (positionSwitch) {
   case null:
     themePage.classList.add(Theme.LIGHT);
     localStorage.setItem('theme', 'false');
-    console.log(localStorage.getItem('theme'));
     break;
   case 'true':
     themePage.classList = Theme.DARK;
