@@ -11,9 +11,9 @@ const positionSwitch = localStorage.getItem('theme');
 switch (positionSwitch) {
   case null:
     themePage.classList.add(Theme.LIGHT);
-    localStorage.setItem('theme', 'false');
+    localStorage.setItem('theme', Theme.LIGHT);
     break;
-  case 'true':
+  case Theme.DARK:
     themePage.classList = Theme.DARK;
     checkBoxSwitcher.checked = true;
 }
@@ -26,6 +26,6 @@ function switchTheme(event) {
   } else {
     themePage.classList = Theme.LIGHT;
   }
-  localStorage.setItem('theme', event.target.checked);
+  localStorage.setItem('theme', themePage.classList.value);
   checkBoxSwitcher.removeEventListener;
 }
