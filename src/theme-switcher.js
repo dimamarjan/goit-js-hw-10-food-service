@@ -16,6 +16,10 @@ switch (positionSwitch) {
   case Theme.DARK:
     themePage.classList = Theme.DARK;
     checkBoxSwitcher.checked = true;
+    break;
+  case Theme.LIGHT:
+    themePage.classList = Theme.LIGHT;
+    checkBoxSwitcher.checked = false;
 }
 
 checkBoxSwitcher.addEventListener('change', switchTheme);
